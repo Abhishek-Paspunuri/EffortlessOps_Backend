@@ -3,7 +3,8 @@ const express = require('express');
 const { MongoClient, ObjectId } = require('mongodb');
 const router = express.Router();
 
-const uri = 'mongodb://127.0.0.1:27017/scheduled-Events?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.7.1';
+// const uri = 'mongodb://127.0.0.1:27017/scheduled-Events?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.7.1';
+const uri = 'mongodb+srv://Abhishek:Sweetmom%40123@cluster0.kegmq6b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 
 

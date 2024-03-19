@@ -46,7 +46,7 @@ router.post('/submit-form', [upload.single('file'), body('email','Enter a valid 
 
     //Connecting to MongoClient
     const { MongoClient } = require('mongodb');
-    const uri = 'mongodb://127.0.0.1:27017/image-capture?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.7.1';
+    const uri = 'mongodb+srv://Abhishek:Sweetmom%40123@cluster0.kegmq6b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
     const client = await new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     client.connect((err) => { console.log(err) });
 
@@ -100,7 +100,7 @@ router.post('/login',[
 ], async (req,res)=>{ 
     let success=false
     const { MongoClient } = require('mongodb');
-    const uri = 'mongodb://127.0.0.1:27017/image-capture?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.7.1';
+    const uri = 'mongodb+srv://Abhishek:Sweetmom%40123@cluster0.kegmq6b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
     const client = await new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     client.connect((err) => { console.log(err) });
     //Insertion in Db - Mongo Client

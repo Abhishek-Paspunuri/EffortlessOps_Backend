@@ -4,7 +4,7 @@ const UserImage = require('../models/UserImage');
 var fs = require('fs');
 
 const { MongoClient } = require('mongodb');
-const uri = 'mongodb://127.0.0.1:27017/directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.7.1';
+const uri = 'mongodb+srv://Abhishek:Sweetmom%40123@cluster0.kegmq6b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 const app = express();
 app.use(express.json({ limit: '50mb' }));
